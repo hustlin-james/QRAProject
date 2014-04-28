@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+  <servlet>
+    <servlet-name>processQRData</servlet-name>
+    <servlet-class>com.qra.project.ProcessQRDataServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>processQRData</servlet-name>
+    <url-pattern>/processqr</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AttendeeNameServlet</servlet-name>
+    <servlet-class>com.qra.project.AttendeeNameServlet</servlet-class>
+  	</servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AttendeeNameServlet</servlet-name>
+    <url-pattern>/name</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.qra.project.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.qra.project.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/hostlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>WebLoginServlet</servlet-name>
+    <servlet-class>com.qra.project.WebLoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>WebLoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+    
+  <servlet>
+    <servlet-name>ConferenceCreationServlet</servlet-name>
+    <servlet-class>com.qra.project.ConferenceCreationServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ConferenceCreationServlet</servlet-name>
+    <url-pattern>/createconference</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateMyQRServlet</servlet-name>
+    <servlet-class>com.qra.project.CreateMyQRServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CreateMyQRServlet</servlet-name>
+    <url-pattern>/createmyqr</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateBatchQRServlet</servlet-name>
+    <servlet-class>com.qra.project.CreateBatchQRServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CreateBatchQRServlet</servlet-name>
+    <url-pattern>/createbatchqr</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateQRServlet</servlet-name>
+    <servlet-class>com.qra.project.CreateQRServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CreateQRServlet</servlet-name>
+    <url-pattern>/createqr</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CreateBlankQRServlet</servlet-name>
+    <servlet-class>com.qra.project.CreateBlankQRServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CreateBlankQRServlet</servlet-name>
+    <url-pattern>/createblankqr</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.qra.project.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <servlet-class>com.qra.project.EditProfileServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EditProfileServlet</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchConferencesServlet</servlet-name>
+    <servlet-class>com.qra.project.SearchConferencesServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SearchConferencesServlet</servlet-name>
+    <url-pattern>/searchconferences</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FindConferencesServlet</servlet-name>
+  	<servlet-class>com.qra.project.FindConferencesServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FindConferencesServlet</servlet-name>
+  	<url-pattern>/findconferences</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>JoinConferenceServlet</servlet-name>
+  	<servlet-class>com.qra.project.JoinConferenceServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>JoinConferenceServlet</servlet-name>
+  	<url-pattern>/joinconference</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MoreConfInformationServlet</servlet-name>
+  	<servlet-class>com.qra.project.MoreConfInformationServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+  	<servlet-name>MoreConfInformationServlet</servlet-name>
+  	<url-pattern>/moreconfinfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RetrieveProfileImageServlet</servlet-name>
+  	<servlet-class>com.qra.project.RetrieveProfileImageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>RetrieveProfileImageServlet</servlet-name>
+  	<url-pattern>/profileimg</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CalculateAttServlet</servlet-name>
+  	<servlet-class>com.qra.project.CalculateAttServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CalculateAttServlet</servlet-name>
+  	<url-pattern>/calcattendance</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<servlet-class>com.qra.project.IndexServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>EditConferenceServlet</servlet-name>
+  	<servlet-class>com.qra.project.EditConferenceServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>EditConferenceServlet</servlet-name>
+  	<url-pattern>/editconference</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
